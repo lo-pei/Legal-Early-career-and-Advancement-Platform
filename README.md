@@ -2,7 +2,7 @@
 
 **Legal Early-career and Advancement Platform** — 法学本科生 / 研究生的比赛、征文、求职信息与协作平台。
 
-本仓库当前存放 **产品计划书** 与 **五屏高保真原型**（静态 HTML/CSS/JS，无构建步骤）。
+本仓库当前存放 **产品计划书** 与 **六屏高保真原型**（静态 HTML/CSS/JS，无构建步骤）。
 
 ```
 .
@@ -10,7 +10,7 @@
 ├── design/
 │   ├── PRODUCT.md             为谁做、必须做到什么、明确的边界
 │   ├── DESIGN.md              设计令牌、字体、栅格算术、组件规则、逐屏决策
-│   ├── prototype/             五页原型
+│   ├── prototype/             六页原型
 │   │   ├── index.html         今天：未来 14 天截止表
 │   │   ├── competitions.html  机会：在架信息列表（表格 / 仅按日期 两种密度）
 │   │   ├── competition.html   比赛详情：赛程轨道、组队、资料
