@@ -1,0 +1,14 @@
+# 工具运行痕迹（度量脚本的输出缓存，不参与版本）
+.taste-skill/
+**/.taste-skill/
+
+# 依赖与系统文件
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

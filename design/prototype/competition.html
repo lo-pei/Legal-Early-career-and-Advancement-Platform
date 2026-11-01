@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jessup 中国选拔赛 · LEAP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar" aria-label="主导航">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <path d="M3 18h4.5v-4.5H12V9h4.5V4.5H21" stroke="#17181a" stroke-width="2"/>
+        <path d="M16.5 4.5H21V9" stroke="#a63a24" stroke-width="2"/>
+      </svg>
+      <span class="brand-name">LEAP</span>
+    </a>
+    <div class="scope" role="group" aria-label="当前身份">
+      <span>中国政法大学</span><b>· 学生</b>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+
+    <nav aria-label="内容">
+      <a class="nav-item" href="index.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="8" r="5.6"/><path d="M8 5.2v3l2 1.3" stroke-linecap="round"/></svg>
+        今天
+      </a>
+      <a class="nav-item" href="competitions.html" aria-current="page">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="6" r="3.2"/><path d="M5.7 8.7 4.6 14l3.4-1.9 3.4 1.9-1.1-5.3" stroke-linejoin="round"/></svg>
+        比赛
+      </a>
+      <a class="nav-item" href="competitions.html?kind=academic">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 13h10M4.6 9.4 11 3l2 2-6.4 6.4-2.6.6.6-2.6Z" stroke-linejoin="round"/></svg>
+        征文
+      </a>
+      <a class="nav-item" href="competitions.html?kind=job">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="2.5" y="5.4" width="11" height="7.6" rx="1.2"/><path d="M6 5.4V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1.4"/></svg>
+        求职
+      </a>
+    </nav>
+
+    <div class="group-label">我的</div>
+    <nav aria-label="我的">
+      <a class="nav-item" href="team.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="6" cy="5.8" r="2.3"/><path d="M2.4 13c0-2.1 1.6-3.4 3.6-3.4s3.6 1.3 3.6 3.4" stroke-linecap="round"/><path d="M10.6 4a2.3 2.3 0 0 1 0 3.7M11.2 9.8c1.5.3 2.4 1.4 2.4 3.2" stroke-linecap="round"/></svg>
+        我的队伍
+      </a>
+      <a class="nav-item" href="library.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="2.5" y="3.4" width="11" height="3" rx=".6"/><path d="M3.6 6.4v6.2h8.8V6.4M6.4 9h3.2"/></svg>
+        资料库
+        <span class="count" aria-label="21 份资料">21</span>
+      </a>
+    </nav>
+
+    <div class="group-label">机构</div>
+    <nav aria-label="机构">
+      <a class="nav-item" href="school.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2.4 6.5 8 3l5.6 3.5M4.2 6.6v5.2M8 6.6v5.2M11.8 6.6v5.2M2.6 13.4h10.8" stroke-linecap="round"/></svg>
+        学校端
+        <span class="count" aria-label="18 份待审">18</span>
+      </a>
+    </nav>
+
+    <div class="bottom">
+      <a class="nav-item" href="#">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 5.2h10M3 10.8h10"/><circle cx="6.2" cy="5.2" r="1.7" fill="#fff"/><circle cx="10" cy="10.8" r="1.7" fill="#fff"/></svg>
+        设置
+      </a>
+    </div>
+  </aside>
+
+  <main class="canvas">
+    <div class="topbar-phone">
+      <button class="btn ghost" id="menu" aria-expanded="false" aria-label="打开导航">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11" stroke-linecap="round"/></svg>
+      </button>
+      <span class="brand-name">LEAP</span>
+    </div>
+
+    <div class="title-row">
+      <div>
+        <h1>第二十四届 Jessup 国际法模拟法庭辩论赛 · 中国选拔赛</h1>
+        <p class="sub">比赛 · 国际公法 · 主办 中国国际法学会 · 报名截止 <b>11.08</b> · 正赛 2027.02.27—03.08 在北京</p>
+      </div>
+      <div class="title-actions">
+        <button class="btn" aria-pressed="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 2.8h7v10.4L8 10.6l-3.5 2.6z" stroke-linejoin="round"/></svg>
+          已收藏
+        </button>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <section class="panel span-8 stretch" aria-labelledby="sched-h">
+        <header>
+          <h2 id="sched-h">赛程</h2>
+          <span class="meta">4 个节点 · 官方日程</span>
+        </header>
+        <p class="lead">距离报名截止还有 <b class="mono accent" style="font-size:30px;margin:0 4px">7</b> 天，书状提交还有 <b class="mono" style="font-weight:500">76</b> 天。</p>
+        <ol class="track">
+          <li class="done">
+            <span class="dot"></span>
+            <span class="stage">赛题发布</span>
+            <span class="date">10.12</span>
+          </li>
+          <li class="now">
+            <span class="dot"></span>
+            <span class="stage">报名截止</span>
+            <span class="date">11.08</span>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <span class="stage">书状提交</span>
+            <span class="date">2027.01.16</span>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <span class="stage">口头轮与颁奖</span>
+            <span class="date">03.06—03.08</span>
+          </li>
+        </ol>
+        <div class="rows" style="margin-top:20px">
+          <div class="row">
+            <div class="grow">
+              <div class="title">2027 年赛题（Compromis）已发布</div>
+              <div class="line2">ILSA 官方发布 · 收录于资料库 · 官方公开原文</div>
+            </div>
+            <a class="card-link" href="#">查看</a>
+          </div>
+        </div>
+        <div class="panel-foot"><a class="card-link" href="#">订阅日程提醒（ICS）</a></div>
+      </section>
+
+      <aside class="panel span-4 stretch" aria-labelledby="info-h">
+        <header>
+          <h2 id="info-h">关键信息</h2>
+        </header>
+        <dl class="kv">
+          <dt>面向</dt><dd>本科生 / 法学硕士，大二及以上</dd>
+          <dt>队伍</dt><dd>每队 5 人，可跨校，可配 2 名教练</dd>
+          <dt>形式</dt><dd>线上初赛 + 北京线下正赛</dd>
+          <dt>费用</dt><dd><span class="mono">¥600</span> / 队</dd>
+          <dt>奖项</dt><dd>一等奖 1 队，二等奖 3 队，最佳书状、最佳辩手各 1 名</dd>
+          <dt>来源</dt><dd><a class="link" href="#">中国国际法学会官网</a> · 更新 10-30 17:20</dd>
+        </dl>
+        <div class="panel-foot" style="display:flex;gap:8px">
+          <a class="btn" href="#">官方报名</a>
+          <a class="btn ghost" href="#">举报</a>
+        </div>
+      </aside>
+
+      <section class="panel span-7 stretch" aria-labelledby="team-h">
+        <header>
+          <h2 id="team-h">组队专区</h2>
+          <span class="meta">4 支队伍 · 3 支仍在招募</span>
+          <button class="card-link">发布组队帖</button>
+        </header>
+        <div class="rows">
+          <div class="row">
+            <div class="grow">
+              <div class="title">「衡平」队 <span class="pill pos" style="margin-left:4px">我的队伍</span></div>
+              <div class="line2">中国政法大学 · 缺 书状写作（英文）· 4 / 5 人</div>
+            </div>
+            <span class="mono small muted">已加入</span>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">Lex Anglia <span class="pill" style="margin-left:4px">可跨校</span></div>
+              <div class="line2">华东政法大学 · 缺 研究员 2 名 · 3 / 5 人</div>
+            </div>
+            <button class="btn sm">申请加入</button>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">「未名」队 <span class="pill" style="margin-left:4px">可跨校</span></div>
+              <div class="line2">中国人民大学 · 缺 研究员 1 名 · 4 / 5 人</div>
+            </div>
+            <button class="btn sm">申请加入</button>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">「万国」队 <span class="pill line" style="margin-left:4px">已满员</span></div>
+              <div class="line2">北京大学 · 5 / 5 人 · 满员后自动关闭申请</div>
+            </div>
+            <button class="btn sm" disabled>已满</button>
+          </div>
+        </div>
+        <div class="panel-foot">
+          <a class="card-link" href="#">申请与审核规则</a>
+        </div>
+      </section>
+
+      <section class="panel span-5 stretch" aria-labelledby="res-h">
+        <header>
+          <h2 id="res-h">赛题与资料</h2>
+          <span class="meta">最近 4 条</span>
+        </header>
+        <div class="rows">
+          <div class="row">
+            <div class="grow">
+              <div class="title">2027 年赛题（Compromis）</div>
+              <div class="line2">赛题 · 2027 · ILSA 官方发布</div>
+            </div>
+            <span class="pill pos">已公开</span>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">书状规则与格式手册（第 12 版）</div>
+              <div class="line2">规则 · 2026 · ILSA 官方发布</div>
+            </div>
+            <span class="pill pos">已公开</span>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">2026 年二等奖书状（Applicant）</div>
+              <div class="line2">书状 · 2026 · 「衡平」队授权公开</div>
+            </div>
+            <span class="pill pos">已公开</span>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">口头轮法官提问高频清单</div>
+              <div class="line2">经验帖 · 2026 · 站内用户投稿</div>
+            </div>
+            <span class="pill warn">待审核</span>
+          </div>
+        </div>
+        <div class="panel-foot">
+          <a class="card-link" href="#">进入资料库（5 条）</a>
+        </div>
+      </section>
+
+    </div>
+
+    <p class="small faint" style="margin-top:12px">平台只索引官方公开或已授权内容；付费、保密与内部赛题一律不搬运。版权说明随每条资料标注。</p>
+  </main>
+</div>
+
+<nav class="tabbar" aria-label="快捷导航">
+  <a href="index.html">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="8" r="5.6"/><path d="M8 5.2v3l2 1.3" stroke-linecap="round"/></svg>
+    今天
+  </a>
+  <a href="competitions.html" aria-current="page">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="6" r="3.2"/><path d="M5.7 8.7 4.6 14l3.4-1.9 3.4 1.9-1.1-5.3" stroke-linejoin="round"/></svg>
+    比赛
+  </a>
+  <a href="competitions.html?kind=academic">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 13h10M4.6 9.4 11 3l2 2-6.4 6.4-2.6.6.6-2.6Z" stroke-linejoin="round"/></svg>
+    征文
+  </a>
+  <a href="competitions.html?kind=job">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="2.5" y="5.4" width="11" height="7.6" rx="1.2"/><path d="M6 5.4V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1.4"/></svg>
+    求职
+  </a>
+  <a href="team.html">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="6" cy="5.8" r="2.3"/><path d="M2.4 13c0-2.1 1.6-3.4 3.6-3.4s3.6 1.3 3.6 3.4" stroke-linecap="round"/></svg>
+    队伍
+  </a>
+</nav>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

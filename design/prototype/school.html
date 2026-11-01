@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 秋季集中实习 · LEAP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar" aria-label="主导航">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <path d="M3 18h4.5v-4.5H12V9h4.5V4.5H21" stroke="#17181a" stroke-width="2"/>
+        <path d="M16.5 4.5H21V9" stroke="#a63a24" stroke-width="2"/>
+      </svg>
+      <span class="brand-name">LEAP</span>
+    </a>
+    <div class="scope" role="group" aria-label="当前身份">
+      <span>法学院</span><b>· 管理员</b>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+
+    <nav aria-label="内容">
+      <a class="nav-item" href="index.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="8" r="5.6"/><path d="M8 5.2v3l2 1.3" stroke-linecap="round"/></svg>
+        今天
+      </a>
+      <a class="nav-item" href="competitions.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="6" r="3.2"/><path d="M5.7 8.7 4.6 14l3.4-1.9 3.4 1.9-1.1-5.3" stroke-linejoin="round"/></svg>
+        比赛
+      </a>
+      <a class="nav-item" href="competitions.html?kind=academic">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 13h10M4.6 9.4 11 3l2 2-6.4 6.4-2.6.6.6-2.6Z" stroke-linejoin="round"/></svg>
+        征文
+      </a>
+      <a class="nav-item" href="competitions.html?kind=job">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="2.5" y="5.4" width="11" height="7.6" rx="1.2"/><path d="M6 5.4V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1.4"/></svg>
+        求职
+      </a>
+    </nav>
+
+    <div class="group-label">我的</div>
+    <nav aria-label="我的">
+      <a class="nav-item" href="team.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="6" cy="5.8" r="2.3"/><path d="M2.4 13c0-2.1 1.6-3.4 3.6-3.4s3.6 1.3 3.6 3.4" stroke-linecap="round"/><path d="M10.6 4a2.3 2.3 0 0 1 0 3.7M11.2 9.8c1.5.3 2.4 1.4 2.4 3.2" stroke-linecap="round"/></svg>
+        我的队伍
+      </a>
+      <a class="nav-item" href="library.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="2.5" y="3.4" width="11" height="3" rx=".6"/><path d="M3.6 6.4v6.2h8.8V6.4M6.4 9h3.2"/></svg>
+        资料库
+        <span class="count" aria-label="21 份资料">21</span>
+      </a>
+    </nav>
+
+    <div class="group-label">机构</div>
+    <nav aria-label="机构">
+      <a class="nav-item" href="school.html" aria-current="page">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2.4 6.5 8 3l5.6 3.5M4.2 6.6v5.2M8 6.6v5.2M11.8 6.6v5.2M2.6 13.4h10.8" stroke-linecap="round"/></svg>
+        学校端
+        <span class="count" aria-label="18 份待审">18</span>
+      </a>
+    </nav>
+
+    <div class="bottom">
+      <a class="nav-item" href="#">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 5.2h10M3 10.8h10"/><circle cx="6.2" cy="5.2" r="1.7" fill="#fff"/><circle cx="10" cy="10.8" r="1.7" fill="#fff"/></svg>
+        设置
+      </a>
+    </div>
+  </aside>
+
+  <main class="canvas">
+    <div class="topbar-phone">
+      <button class="btn ghost" id="menu" aria-expanded="false" aria-label="打开导航">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11" stroke-linecap="round"/></svg>
+      </button>
+      <span class="brand-name">LEAP</span>
+    </div>
+
+    <div class="title-row">
+      <div>
+        <h1>2026 秋季集中实习</h1>
+        <p class="sub" id="head-sub">法学 2023 级 · 5 个班 · 已提交 <b id="sub-n">142</b> / 168，<b id="pend-n">18</b> 份待你审核</p>
+      </div>
+      <div class="title-actions">
+        <button class="btn">导出汇总</button>
+        <button class="btn primary">批量催交</button>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="kpis span-12">
+        <div class="kpi">
+          <div class="kpi-label">应交材料（人）</div>
+          <div class="kpi-value" id="tot-due">168</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">已提交</div>
+          <div class="kpi-value" id="tot-sub">142</div>
+          <div class="kpi-note">比上周新增 9 份</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">待审</div>
+          <div class="kpi-value" id="tot-pending">18</div>
+          <div class="kpi-note">最久已等 3 天</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">提交率</div>
+          <div class="kpi-value"><span id="tot-rate">84.5</span><small>%</small></div>
+        </div>
+      </div>
+
+      <section class="panel span-8" aria-labelledby="cls-h">
+        <header>
+          <h2 id="cls-h">按班级</h2>
+          <span class="meta">截止 12-31 · 提交率低于 80% 标红</span>
+        </header>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">班级</th>
+                <th scope="col" class="n">应交</th>
+                <th scope="col" class="n">已交</th>
+                <th scope="col" class="n">待审</th>
+                <th scope="col" class="n">打回</th>
+                <th scope="col" class="n">未交</th>
+                <th scope="col" class="n">提交率</th>
+              </tr>
+            </thead>
+            <tbody id="class-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel span-4 stretch" aria-labelledby="q-h">
+        <header>
+          <h2 id="q-h">待审核</h2>
+          <span class="meta">18 份</span>
+        </header>
+        <div class="rows" id="queue-rows"></div>
+        <div class="panel-foot"><a class="card-link" href="#">全部待审（18）</a></div>
+      </section>
+
+      <section class="panel span-7" aria-labelledby="req-h">
+        <header>
+          <h2 id="req-h">材料清单</h2>
+          <span class="meta">4 项必交 · 1 项选交</span>
+        </header>
+        <div class="rows" id="req-rows"></div>
+      </section>
+
+      <section class="panel span-5" aria-labelledby="exp-h">
+        <header>
+          <h2 id="exp-h">归档与权限</h2>
+        </header>
+        <div class="rows">
+          <div class="row">
+            <div class="grow">
+              <div class="title">学期结束后 6 个月自动归档</div>
+              <div class="line2">归档后仅保留审核结论，删除原件</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">可见范围：已加入本计划的 168 人</div>
+              <div class="line2">管理员不能浏览未加入计划的学生文件</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">材料归属：学生个人，学校数据归学校</div>
+              <div class="line2">平台仅受托处理，见数据处理协议</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">导出：按班级 / 学号，含审核结论</div>
+              <div class="line2">不带原件，只带结论与时间</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grow">
+              <div class="title">操作日志：近 30 天 42 条</div>
+              <div class="line2">谁在什么时候看了哪份材料</div>
+            </div>
+            <a class="card-link" href="#">查看</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<nav class="tabbar" aria-label="快捷导航">
+  <a href="index.html">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="8" r="5.6"/><path d="M8 5.2v3l2 1.3" stroke-linecap="round"/></svg>
+    今天
+  </a>
+  <a href="competitions.html">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="8" cy="6" r="3.2"/><path d="M5.7 8.7 4.6 14l3.4-1.9 3.4 1.9-1.1-5.3" stroke-linejoin="round"/></svg>
+    比赛
+  </a>
+  <a href="competitions.html?kind=academic">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 13h10M4.6 9.4 11 3l2 2-6.4 6.4-2.6.6.6-2.6Z" stroke-linejoin="round"/></svg>
+    征文
+  </a>
+  <a href="competitions.html?kind=job">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="2.5" y="5.4" width="11" height="7.6" rx="1.2"/><path d="M6 5.4V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1.4"/></svg>
+    求职
+  </a>
+  <a href="team.html">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="6" cy="5.8" r="2.3"/><path d="M2.4 13c0-2.1 1.6-3.4 3.6-3.4s3.6 1.3 3.6 3.4" stroke-linecap="round"/></svg>
+    队伍
+  </a>
+</nav>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
